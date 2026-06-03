@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - PORT=3000
+      - WATCHPACK_POLLING=true
+      - NEXT_TELEMETRY_DISABLED=1
