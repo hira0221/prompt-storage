@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "万能プロンプト倉庫 - AI初心者向けの簡単プロンプト作成・管理",
   description: "専門用語なしで高度なAIプロンプトを簡単に作成・管理できる、初心者向けのWebアプリケーションです。ローカルストレージで安全に保存できます。",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "プロンプト倉庫",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
